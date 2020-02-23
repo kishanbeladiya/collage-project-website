@@ -1,0 +1,671 @@
+<html>
+
+<head>
+    <title>projects</title>
+    <script>
+        function fn1() {
+            var search;
+            search = document.getElementById('search').value;
+            if (search == 0)
+                alert("Not valid search");
+        }
+    </script>
+</head>
+<style>
+    b.title {
+        position: absolute;
+        top: 3%;
+        left:4%;
+        color: white;
+        font-size: 53px;
+        border: 0px solid white;
+        padding: 4px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        box-shadow: 3px 3px 6px black;
+
+    }
+
+    img.backimage {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin: -8px;
+        z-index: -1;
+    }
+
+    nav.navbar {
+        display: block;
+        position: absolute;
+        display: inline-block;
+        top: 4%;
+        left: 32%;
+        font-size: 20px;
+    }
+
+    a.ele {
+        color: white;
+        text-decoration: none;
+        font-family: Georgia;
+        transition: 0.8s ease;
+        padding: 10px;
+
+    }
+
+    a.ele:active {
+        color: #f4b41a;
+        background-color: #143d59;
+    }
+
+    a.ele:hover {
+        font-size: 30px;
+        background-color: #f4b41a;
+        color: black;
+        border: 1px solid white;
+        border-radius: 3px;
+        padding: 8px;
+        box-shadow: 0px 0px 0px white;
+        opacity: 90%;
+    }
+
+    img.selfphoto {
+        height: 174px;
+        width: 174px;
+        border-radius: 10px;
+        position: absolute;
+        top: 23%;
+        left: 10%;
+        box-shadow: 4px 4px 10px black;
+        transition: 0.7s;
+    }
+
+    img.selfphoto:hover {
+        height: 190px;
+        width: 190px;
+        border-radius: 10px;
+        position: absolute;
+        top: 23%;
+        left: 10%;
+        box-shadow: 4px 4px 10px black;
+    }
+
+    /*div.content{
+            position: absolute;
+            height: 170px;
+            width: 170px;
+            padding:5px;
+            top:23%;
+            left:10%;
+            color:#f4b41a;
+            text-align:center;;
+            font-size:45Px;
+            text-shadow: 3px 3px 5px black;
+            box-shadow: 3px 3px 17px black;
+        
+        }*/
+    p.info {
+        position: absolute;
+        top: 45%;
+        left: 27%;
+        font-size: 20px;
+        color: white;
+    }
+
+    input.search {
+        height: 30px;
+        width: 250px;
+        top: 31%;
+        right: 10%;
+        position: absolute;
+        box-shadow: -2px 2px 20px black;
+        border-radius: 5px;
+    }
+
+    p.searchi {
+        position: absolute;
+        top: 38%;
+        right: 11%;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+    }
+
+    button.but1 {
+        position: absolute;
+        top: 31%;
+        right: 5%;
+        height: 30px;
+        width: 70px;
+        background-color: #f4b41a;
+        box-shadow: -2px 2px 2px black;
+        border-radius: 5px;
+    }
+
+    div.search1 {
+        box-shadow: 5px 5px 5px black;
+    }
+
+    nav.social {
+        position: absolute;
+        top: 85%;
+        left: 43%;
+    }
+
+    img.social1 {
+        height: 30px;
+        width: 30px;
+        transition: 0.3s;
+    }
+
+    img.social1:hover {
+        border-radius: 10px;
+        border: 1px solid white;
+        height: 35px;
+        width: 35px;
+    }
+
+    img.social2 {
+        height: 30px;
+        width: 30px;
+        transition: 0.3s;
+    }
+
+    img.social2:hover {
+        border-radius: 10px;
+        border: 1px solid white;
+        height: 35px;
+        width: 35px;
+    }
+
+    img.social3 {
+        height: 30px;
+        width: 30px;
+        transition: 0.3s;
+    }
+
+    img.social3:hover {
+        border-radius: 10px;
+        border: 1px solid white;
+        height: 35px;
+        width: 35px;
+    }
+
+    img.social4 {
+        height: 30px;
+        width: 30px;
+        transition: 0.3s;
+    }
+
+    img.social4:hover {
+        border-radius: 10px;
+        border: 1px solid white;
+        height: 35px;
+        width: 35px;
+    }
+
+    label.label {
+        color: #f4b41a;
+        box-shadow: 1px 1px 2px black;
+    }
+
+    /*div.select {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        opacity: 75%;
+        transition: 0.5s;
+    }
+    div.select i{
+        position: absolute;
+        left:105%;
+        color:white;
+        display: none;
+        transition: 0.1s;
+    }
+    div.select:hover{
+        opacity: 100%;
+        box-shadow: 2px 2px 5px black;
+    }
+    div.select:hover i{
+        display:inline;
+    }
+    select.select1 {
+        font-size: 23px;
+        box-shadow:1px 1px 2px black;
+        height:70px;
+        width:200px;
+        border: 1px solid #f4b41a;
+        border-radius: 5px;
+        color: #143d59;
+    }*/
+    div.wholename {
+        position: absolute;
+        top: 24%;
+        left: 30%;
+        /* box-shadow: 1px 1px 1px black;*/
+    }
+/*
+    div.name {
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 5px -5px 15px black;
+        position: relative;
+        top: 5%;
+        padding: 10px;
+        color: white;
+        font-size: 32px;
+        text-align: center;
+        transition: 0.5s ease-out;
+    }
+
+    div.name:hover {
+        font-size: 40px;
+    }
+
+    div.school:hover {
+        font-size: 40px;
+    }
+
+    div.hobby:hover {
+        font-size: 40px;
+    }
+
+    div.nameh {
+        position: relative;
+        color: white;
+        font-size: 20px;
+        top: -125%;
+        left: 100%;
+        opacity: 0%;
+        transition: 0.5s ease-in;
+    }
+
+    div.name:hover div {
+        opacity: 100%;
+    }
+
+    div.school {
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 3px -3px 15px black;
+        position: relative;
+        top: 5%;
+        padding: 10px;
+        color: white;
+        font-size: 32px;
+        text-align: center;
+        transition: 0.5s ease-out;
+    }
+
+    div.schoolh {
+        position: relative;
+        color: white;
+        font-size: 20px;
+        top: -125%;
+        left: 103%;
+        text-align: center;
+        opacity: 0%;
+        transition: 0.5s ease-in;
+    }
+
+    div.school:hover div {
+        opacity: 100%;
+    }
+
+    div.hobby {
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 5px -5px 15px black;
+        position: relative;
+        top: 5%;
+        padding: 10px;
+        color: white;
+        font-size: 32px;
+        text-align: center;
+        transition: 0.5s ease-out;
+    }
+
+    div.hobbyh {
+        position: relative;
+        color: white;
+        font-size: 20px;
+        top: -125%;
+        left: 100%;
+        opacity: 0%;
+        transition: 0.5s ease-in;
+    }
+
+    div.hobby:hover div {
+        opacity: 100%;
+    }*/
+    div.arduino{
+        height: 150px;
+        width:150px;
+        padding: 1px;
+        position:absolute;
+        top:103%;
+        border-radius: 5px;
+        opacity: 80%;
+        box-shadow: 2px 2px 6px black;
+    }
+    div.arduino img{
+        height:150px ;
+        width:150px;
+    }
+    div.arduino b{
+        position: relative;
+        top:-85%;
+        left:10%;
+        color:white;
+        font-size: 30px;
+        text-shadow: 3px 3px 5px black;
+        transition: 0.8s;
+    }
+    div.arduino i{
+        font-size:20px;
+        color:#143d59;
+        position: relative;
+        top:-80%;
+        left:120%;
+        display:inline-block;
+        transition: 0.6s;
+    }
+    div.arduino b:hover{
+        font-size: 33px;
+    }
+    div.dc{
+        height: 165px;
+        width:165px;
+        padding: 1px;
+        position:absolute;
+        top:140%;
+        border-radius: 5px;
+        opacity: 80%;
+        text-align: center;
+        box-shadow: 2px 2px 6px black;
+    }
+    div.dc img{
+        height:165px ;
+        width:165px;
+    }
+    div.dc b{
+        position: relative;
+        top:-75%;
+        text-align: center;
+        left:-2%;
+        color:white;
+        font-size: 30px;
+        text-shadow: 3px 3px 5px black;
+    }
+    div.dc i{
+        font-size:20px;
+        color:#143d59;
+        position: relative;
+        top:-130%;
+        left:120%;
+        display:inline-block;
+        transition: 0.6s;
+    }
+    div.dc b:hover{
+        font-size: 32px;
+        transition: 0.8s;
+
+    }
+    div.sc{
+        height: 165px;
+        width:165px;
+        padding: 1px;
+        position:absolute;
+        top:180%;
+        border-radius: 5px;
+        opacity: 80%;
+        text-align: center;
+        box-shadow: 2px 2px 6px black;
+    }
+    div.sc img{
+        height:165px ;
+        width:165px;
+    }
+    div.sc b{
+        position: relative;
+        top:-75%;
+        text-align: center;
+        left:-2%;
+        color:black;
+        font-size: 30px;
+        text-shadow: 3px 3px 5px black;
+    }
+    div.sc i{
+        font-size:20px;
+        color:#143d59;
+        position: relative;
+        top:-120%;
+        left:120%;
+        display:inline-block;
+        transition: 0.6s;
+    }
+    div.sc b:hover{
+        font-size: 32px;
+        transition: 0.8s;
+
+    }
+    div.mp{
+        height: 165px;
+        width:165px;
+        padding: 1px;
+        position:absolute;
+        top:220%;
+        border-radius: 5px;
+        opacity: 80%;
+        text-align: center;
+        box-shadow: 2px 2px 6px black;
+    }
+    div.mp img{
+        height:165px ;
+        width:165px;
+    }
+    div.mp b{
+        position: relative;
+        top:-75%;
+        text-align: center;
+        left:-2%;
+        color:white;
+        font-size: 30px;
+        text-shadow: 3px 3px 5px black;
+    }
+    div.mp i{
+        font-size:20px;
+        color:#143d59;
+        position: relative;
+        top:-120%;
+        left:120%;
+        display:inline-block;
+        transition: 0.6s;
+    }
+    div.mp b:hover{
+        font-size: 32px;
+        transition: 0.8s;
+
+    }
+    .dropbtn {
+  background-color: #f4b41a;
+  color: white;
+  padding: 25px;
+  font-size: 16px;
+  width: 300px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+    background-color: #c48f15;
+    }
+    div.dropdown{
+        position:absolute;
+        top:35%;
+        left:20%;
+    }
+    p.extra{
+        color: #143d59;
+        font-size: 20px;
+        position: relative;
+        top:20%;
+        left:2%;
+        width: 80%;
+        text-align: center;
+        opacity: 80%;
+        transition: 0.7s;
+    }
+    div.extra{
+        height: 100px;
+        position: relative;
+        top:10%;
+        text-align: center;
+        left:40%;
+        width:50%;
+        opacity: 80%;
+        box-shadow: 1px 1px 10px black;
+    }
+    button.back{
+        position: fixed;
+        top:80%;
+        right:2%;
+        background-color:#f4b41a;
+        border: none;
+        border-radius: 10px;
+        width: 70px;
+        height: 70px;
+        box-shadow: 2px 2px 5px black;
+    }
+    button.back a{
+        text-decoration: none;
+        color:black;
+        font-size: 18px;
+    }
+</style>
+
+<body bgcolor='white'>
+    <b class="title" id="top">Projects &<br>Activity</b>
+    <img src="backimage.jpg" class="backimage">
+    <div class="header">
+        <nav class="navbar">
+            <img src="">
+            &nbsp;<a href="homepage.html"  class="ele">Home</a>&nbsp;&nbsp;
+            <a href="about.html" class="ele" >About Me</a>&nbsp;&nbsp;
+            <a href="location.html" class="ele" >Location</a>&nbsp;&nbsp;
+            <a href="project2.html" class="ele" >Projects</a>&nbsp;&nbsp;
+            <a href="subject.html" class="ele" >Subject</a>&nbsp;&nbsp;
+            <a href="html.html" class="ele" >HTML</a>&nbsp;
+        </nav>
+        <!--<p class="info">
+                   
+                       <label class="label">Name :: </label>&nbsp;<i> Kishan Beladiya.</i><br><br>
+                       <label class="label">School :: </label>&nbsp;<i> P.P. savani Vidhyadham (2017-2019).<br>Vallabhacharya Vidhyadham (2007-2016).</i><br><br>
+                       <label class="label">Hobby :: </label>&nbsp;<i>badminton, reading.</i><br><br>
+                       <label class="label">strength :: </label>&nbsp;<i>determine.</i><br><br>
+                       <label class="label">weakness :: </label>&nbsp;<i>Very Shy.</i>
+                </p>-->
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                      <a href="#arduino">Arduino</a>
+                      <a href="#dc">MATLAB Project</a>
+                      <a href="#sc">CID</a>
+                      <a href="#mp">Model on Polution </a>
+                    </div>
+                  </div>
+
+    </div>
+    <div class="search1">
+        <input type="search" placeholder="search" class="search" id="search">
+        <button class="but1" onclick="fn1()">Go</button>
+        <p class="searchi">Type anything you want</p>
+    </div>
+    <!--<div class="content">
+        <img class="selfphoto" src="myphoto.jpg">
+    </div>-->
+   <!-- <nav class="social">
+        <a href=""> <img src="instagram (1).png" class="social1"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=""> <img src="facebook (2).png" class="social2"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=""><img src="linkedin (1).png" class="social3"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=""><img src="twitter (2).png" class="social4"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </nav>-->
+    <!--<div class="wholename">
+        <div class="name">
+            Name
+            <div class="nameh">
+                <p>&nbsp;<i>Kishan Beladiya</i></p>
+            </div>
+        </div>
+        <div class="school">
+            School
+            <div class="schoolh">
+                <p>&nbsp;<i>P.P. Savani vidhyabhavan</i></p>
+            </div>
+        </div>
+        <div class="hobby">
+            Hobby
+            <div class="hobbyh">
+                <p>&nbsp;<i> badminton, reading.</p>
+            </div>
+        </div>
+    </div>-->
+    <hr><hr>
+        <div class="arduino" >
+            <img class="img1" id="arduino" src="arduino.jpg">
+            <b>Arduino</b>
+            <i>Voice Controll device.</i>
+        </div>
+        <div class="dc" id="dc">
+            <img src="firefly.jpg">
+            <b>MATLAB Project</b>
+            <i>Firefly algo</i>
+        </div>
+        <div class="sc" id="sc">
+            <img src="cid.png">
+            <b>CID</b>
+            <i>Application based on map</i>
+        </div>
+        <div class="mp" id="mp">
+            <img src="mp.jpg">
+            <b>Model on Polution</b>
+            <i>Science fair (2017).</i>
+        </div>
+        <div class="extra">
+        <p class="extra">
+            This all projects are my collage first year projects.
+        </p>
+        <a href="#top"><button class="back"><b>Top</b></button></a>
+</body>
+
+</html>

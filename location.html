@@ -1,0 +1,285 @@
+<html>
+    <head>
+        <title>location</title>
+        <script>
+            function fn1()
+            {
+                var search;
+                search=document.getElementById('search').value;
+                if(search==0)
+                alert("Not valid search");
+            }
+        </script>
+    </head>
+    <style>
+        b.title{
+            position: absolute;
+            top:3%;
+            left:3%;
+            color:white;
+            font-size: 55px;
+            border:0px solid white;
+            padding:4px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow: 3px 3px 6px black;
+
+        }
+        img.backimage{
+            height:100%;
+            width:100%;
+            position :relative;
+            margin:-8px;
+            z-index: -1;
+        }
+        nav.navbar{
+            display: block;
+            position: absolute;
+            display:inline-block;
+            top:4%;
+            left:32%;
+            font-size: 20px;
+        }
+        a.ele{
+            color:white;
+            text-decoration: none;
+            font-family:Georgia;
+            transition: 0.8s ease;
+            padding: 10px;
+
+        }
+        a.ele:active{
+            color:#f4b41a;
+            background-color: #143d59;
+        }
+        a.ele:hover{
+            font-size: 30px;
+            background-color:#f4b41a;
+            color:black;
+            border:1px solid white;
+            border-radius: 3px;
+            padding:8px;
+            box-shadow: 0px 0px 0px white;
+            opacity:90%;
+        }
+        img.selfphoto{
+            height:174px;
+            width:174px;
+            border-radius: 10px;
+            position: absolute;
+            top:23%;
+            left:10%;
+            box-shadow: 4px 4px 10px black;
+            transition: 0.7s;
+        }
+        img.selfphoto:hover{
+            height:190px;
+            width:190px;
+            border-radius: 10px;
+            position: absolute;
+            top:23%;
+            left:10%;
+            box-shadow: 4px 4px 10px black;
+        }
+        /*div.content{
+            position: absolute;
+            height: 170px;
+            width: 170px;
+            padding:5px;
+            top:23%;
+            left:10%;
+            color:#f4b41a;
+            text-align:center;;
+            font-size:45Px;
+            text-shadow: 3px 3px 5px black;
+            box-shadow: 3px 3px 17px black;
+        
+        }*/
+        p.info{
+            position: absolute;
+            top:45%;
+            left:27%;
+            font-size:20px;
+            color:white;
+        }
+       input.search{
+           height: 30px;
+           width: 250px;
+           top:31%;
+           right:10%;
+           position: absolute;
+           box-shadow: -2px 2px 20px black;
+           border-radius: 5px;
+       }
+       p.searchi{
+        position: absolute;
+            top:38%;
+            right:11%;
+            color:white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:22px;
+       }
+       button.but1{
+            position: absolute;
+            top:31%;
+            right:5%;
+            height:30px;
+            width:70px;
+            background-color: #f4b41a;
+            box-shadow: -2px 2px 2px black;
+            border-radius: 5px;
+       }
+       div.search1{
+           box-shadow: 5px 5px 5px black;
+       }
+       nav.social{
+            position: absolute;
+            top:85%;
+            left:43%;
+        }
+        img.social1{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social1:hover{
+            border-radius: 10px;
+            border:1px solid white;
+            height:35px;
+            width:35px;
+        }
+        img.social2{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social2:hover{
+            border-radius: 10px;
+            border:1px solid white;
+            height:35px;
+            width:35px;
+        }
+        img.social3{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social3:hover{
+            border-radius: 10px;
+            border:1px solid white;
+            height:35px;
+            width:35px;
+        }
+        img.social4{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social4:hover{
+            border-radius: 10px;
+            border:1px solid white;
+            height:35px;
+            width:35px;
+        }
+        iframe.frame{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top:20%;
+            left:4%;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px black;
+        }
+        div.wholename{
+            position: absolute;
+            top:24%;
+            left:30%;
+           /* box-shadow: 1px 1px 1px black;*/
+        }
+        div.name{
+            height: 50px;
+            width: 150px;
+            border-radius: 10px;
+            box-shadow: 5px -5px 15px black;
+            position: relative;
+            top:5%;
+            padding:10px;
+            color:white;
+            font-size: 30px;
+            text-align: center;
+            transition: 0.5s ease-out;
+        }
+        div.name:hover{
+            font-size:40px ;
+        }
+        div.nameh{
+            position: relative;
+            color:white;
+            font-size:20px;
+            top:-125%;
+            left:100%;
+            opacity:0%;
+            transition: 0.5s ease-in;
+        }
+        div.name:hover div{
+            opacity: 100%;
+        }
+        
+    </style>
+
+        <body bgcolor="white">
+            <b class="title">Location</b>
+            <img src="backimage.jpg" class="backimage">
+            <div class="header">
+                <nav class="navbar">
+                    <img src="">
+                    &nbsp;<a href="homepage.html"  class="ele">Home</a>&nbsp;&nbsp;
+                    <a href="about.html" class="ele" >About Me</a>&nbsp;&nbsp;
+                    <a href="location.html" class="ele" >Location</a>&nbsp;&nbsp;
+                    <a href="project2.html" class="ele" >Projects</a>&nbsp;&nbsp;
+                    <a href="subject.html" class="ele" >Subject</a>&nbsp;&nbsp;
+                    <a href="html.html" class="ele" >HTML</a>&nbsp;
+                </nav>
+                <!--<p class="info">
+                   
+                       <label class="label">Name :: </label>&nbsp;<i> Kishan Beladiya.</i><br><br>
+                       <label class="label">School :: </label>&nbsp;<i> P.P. savani Vidhyadham (2017-2019).<br>Vallabhacharya Vidhyadham (2007-2016).</i><br><br>
+                       <label class="label">Hobby :: </label>&nbsp;<i>badminton, reading.</i><br><br>
+                       <label class="label">strength :: </label>&nbsp;<i>determine.</i><br><br>
+                       <label class="label">weakness :: </label>&nbsp;<i>Very Shy.</i>
+                </p>-->
+                <!--<div class="select">
+                    <select class="select1">
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+
+                    </select>-->
+                </div>
+                
+            </div>
+            <div class="search1" >
+                <input type="search" placeholder="search" class="search" id="search">
+                <button class="but1" onclick="fn1()">Go</button>
+                <p class="searchi">Type anything you want</p>
+            </div>
+            <nav class="social">
+                <a href=""> <img src="instagram (1).png" class="social1"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=""> <img src="facebook (2).png" class="social2"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" ><img src="linkedin (1).png" class="social3"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" ><img src="twitter (2).png" class="social4"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </nav>
+            <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14237.041114620415!2d75.81852004999999!3d26.8634705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1582402778388!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="wholename">
+                <div class="name">
+                 Location
+                    <div class="nameh">
+                        <p>&nbsp;<i>MNIT , Jaipur,Rajasthan</i></p>
+                    </div>
+                </div>
+                </div>
+        </body>
+</html>

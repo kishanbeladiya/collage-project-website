@@ -1,0 +1,447 @@
+<html>
+    <head>
+        <title>HTML</title>
+        <script>
+            function fn1()
+            {
+                var search;
+                search=document.getElementById('search').value;
+                if(search==0)
+                alert("Not valid search");
+            }
+        </script>
+    </head>
+    <style>
+        b.title{
+            position: absolute;
+            top:3%;
+            left:3%;
+            color:white;
+            font-size: 55px;
+            border:0px solid white;
+            padding:4px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow: 3px 3px 6px black;
+
+        }
+        img.backimage{
+            height:100%;
+            width:100%;
+            position :relative;
+            margin:-8px;
+            z-index: -1;
+        }
+        nav.navbar{
+            display: block;
+            position: absolute;
+            display:inline-block;
+            top:4%;
+            left:32%;
+            font-size: 20px;
+        }
+        a.ele{
+            color:white;
+            text-decoration: none;
+            font-family:Georgia;
+            transition: 0.8s ease;
+            padding: 10px;
+
+        }
+        a.ele:active{
+            color:#f4b41a;
+            background-color: #143d59;
+        }
+        a.ele:hover{
+            font-size: 30px;
+            background-color:#f4b41a;
+            color:black;
+            border:1px solid white;
+            border-radius: 3px;
+            padding:8px;
+            box-shadow: 0px 0px 0px white;
+            opacity:90%;
+        }
+        img.selfphoto{
+            height:174px;
+            width:174px;
+            border-radius: 10px;
+            position: absolute;
+            top:23%;
+            left:10%;
+            box-shadow: 4px 4px 10px black;
+            transition: 0.7s;
+        }
+        img.selfphoto:hover{
+            height:190px;
+            width:190px;
+            border-radius: 10px;
+            position: absolute;
+            top:23%;
+            left:10%;
+            box-shadow: 4px 4px 10px black;
+        }
+        /*div.content{
+            position: absolute;
+            height: 170px;
+            width: 170px;
+            padding:5px;
+            top:23%;
+            left:10%;
+            color:#f4b41a;
+            text-align:center;;
+            font-size:45Px;
+            text-shadow: 3px 3px 5px black;
+            box-shadow: 3px 3px 17px black;
+        
+        }*/
+        p.info{
+            position: absolute;
+            top:45%;
+            left:27%;
+            font-size:20px;
+            color:white;
+        }
+       input.search{
+           height: 30px;
+           width: 250px;
+           top:31%;
+           right:10%;
+           position: absolute;
+           box-shadow: -2px 2px 20px black;
+           border-radius: 5px;
+       }
+       p.searchi{
+        position: absolute;
+            top:38%;
+            right:11%;
+            color:white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:22px;
+       }
+       button.but1{
+            position: absolute;
+            top:31%;
+            right:5%;
+            height:30px;
+            width:70px;
+            background-color: #f4b41a;
+            box-shadow: -2px 2px 2px black;
+            border-radius: 5px;
+       }
+       div.search1{
+           box-shadow: 5px 5px 5px black;
+       }
+       nav.social{
+            position: absolute;
+            top:85%;
+            left:43%;
+        }
+        img.social1{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social1:hover{
+            border-radius: 10px;
+            border:1px solid white;
+            height:35px;
+            width:35px;
+        }
+        img.social2{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social2:hover{
+            border-radius: 10px;
+            border:1px solid white;
+            height:35px;
+            width:35px;
+        }
+        img.social3{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social3:hover{
+            border-radius: 10px;
+            border:1px solid white;
+            height:35px;
+            width:35px;
+        }
+        img.social4{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social4:hover{
+            border-radius: 10px;
+            border:1px solid white;
+            height:35px;
+            width:35px;
+        }
+        .dropbtn {
+  background-color: #143d59;
+  color: white;
+  padding: 25px;
+  width: 400px;
+  font-size: 16px;
+  border:none;
+  border-radius: 10px;
+  transition: 1s;
+  opacity: 80%;
+  box-shadow: 2px 2px 7px black;
+}
+.dropbtn:hover{
+    color:black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 400px;
+  border: 1px solid #143d59;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px black;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #143d59;
+  padding: 0px 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color:white;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+    background-color: white;
+    }
+    div.dropdown{
+        position:absolute;
+        top:30%;
+        left:5%;
+    }
+    div.extra{
+        color:white;
+        position: absolute;
+        top:50%;
+        left:5%;
+        font-size: 20px;
+    }
+    label.lab{
+        position: absolute;
+        left:50%;
+        top:100%;
+        color:#143d59;
+        font-size: 40px;
+        box-shadow: 2px 2px 9px black;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    i.tcon{
+        position:absolute;
+        top:115%;
+        left:3%;
+        font-size: 25px;
+        text-align: center;
+    } 
+    ol.list li{
+        font-size: 30px;
+        color:#143d59 ;
+        opacity: 90%;
+    }
+    button.top{
+        height:60px;
+        width:60px;
+        position:fixed;
+        top:80%;
+        right:3%;
+        color:white;
+        background-color: black;
+        border: none;
+        border-radius: 15px;
+        box-shadow: -5px 5px 15px black;
+        text-shadow: 1px 1px 3px white;
+        transition: 0.3s;
+    }
+    button.top:hover{
+        height:65px;
+        width:65px;
+        box-shadow:3px 3px 10px white ;
+    }
+    </style>
+
+        <body bgcolor="white">
+            <b id="top" class="title">HTML Tags</b>
+            <img src="backimage.jpg" class="backimage">
+            <div class="header">
+                <nav class="navbar">
+                    <img src="">
+                    &nbsp;<a href="homepage.html"class="ele">Home</a>&nbsp;&nbsp;
+                    <a href="about.html" class="ele" >About Me</a>&nbsp;&nbsp;
+                    <a href="location.html" class="ele">Location</a>&nbsp;&nbsp;
+                    <a href="project2.html" class="ele">Projects</a>&nbsp;&nbsp;
+                    <a href="subject.html" class="ele">Subject</a>&nbsp;&nbsp;
+                    <a href="html.html" class="ele">HTML</a>&nbsp;
+                </nav>
+                <!--<p class="info">
+                   
+                       <label class="label">Name :: </label>&nbsp;<i> Kishan Beladiya.</i><br><br>
+                       <label class="label">School :: </label>&nbsp;<i> P.P. savani Vidhyadham (2017-2019).<br>Vallabhacharya Vidhyadham (2007-2016).</i><br><br>
+                       <label class="label">Hobby :: </label>&nbsp;<i>badminton, reading.</i><br><br>
+                       <label class="label">strength :: </label>&nbsp;<i>determine.</i><br><br>
+                       <label class="label">weakness :: </label>&nbsp;<i>Very Shy.</i>
+                </p>-->
+                <!--<div class="select">
+                    <select class="select1">
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+                        <option class="option" selected>select any</option>
+
+                    </select>-->
+                </div>
+                
+            </div>
+            <div class="search1" >
+                <input type="search" placeholder="search" class="search" id="search">
+                <button class="but1" onclick="fn1()">Go</button>
+                <p class="searchi">Type anything you want</p>
+            </div>
+            <nav class="social">
+                <a href=""> <img src="instagram (1).png" class="social1"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=""> <img src="facebook (2).png" class="social2"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" ><img src="linkedin (1).png" class="social3"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" ><img src="twitter (2).png" class="social4"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </nav>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="#1">!DOCTYP</a>
+                  <a href="#2">html</a>
+                  <a href="#3">head</a>
+                  <a href="#4">title</a>
+                  <a href="#5">body</a>
+                  <a href="#6">id</a>
+                  <a href="#7">h1</a>
+                  <a href="#8">h2</a>
+                  <a href="#9">h3</a>
+                  <a href="#10">h4</a>
+                  <a href="#11">h5</a>
+                  <a href="#12">h6</a>
+                  <a href="#13">style</a>
+                  <a href="#14">br</a>
+                  <a href="#15">hr</a>
+                  <a href="#16">ul</a>
+                  <a href="#17">ol</a>
+                  <a href="#18">li</a>
+                  <a href="#19">strong</a>
+                  <a href="#20">b</a>
+                  <a href="#21">i</a>
+                  <a href="#22">u</a>
+                  <a href="#23">Comment<!-- --></a>
+                  <a href="#24">abbr</a>
+                  <a href="#25">center</a>
+                  <a href="#26">del</a>
+                  <a href="#27">ins</a>
+                  <a href="#28">mark</a>
+                  <a href="#29">pre</a>
+                  <a href="#30">q</a>
+                  <a href="#31">sub</a>
+                  <a href="#32">sup</a>
+                  <a href="#33">time</a>
+                  <a href="#34">form</a>
+                  <a href="#35">input</a>
+                  <a href="#36">button</a>
+                  <a href="#37">textarea</a>
+                  <a href="#38">option</a>
+                  <a href="#39">iframe</a>
+                  <a href="#40">img</a>
+                  <a href="#41">map</a>
+                  <a href="#42">area</a>
+                  <a href="#43">a</a>
+                  <a href="#44">table</a> 
+                  <a href="#45">caption</a>
+                  <a href="#46">th</a>
+                  <a href="#47">tr</a>
+                  <a href="#48">td</a>
+                  <a href="#49">meta</a>
+                  <a href="#50">footer</a>
+                </div>
+              </div>
+              <div class="extra">
+                  Select any tag for extra information about the Tags.
+              </div>
+              <ol class="list">
+                <li id="1">&lt;!DOCTYPE&gt; tag -&nbsp;&nbsp; This tag defines the document type.</li><br><hr><br>
+                <li id="2">&lt;html&gt; tag - &nbsp;&nbsp;This tag is used to define HTML document.</li><br><hr><br>
+                <li id="3">&lt;head&gt; tag - &nbsp;&nbsp;This tag is used to define header for the HTML document. Title and Internal CSS lies inside this tag.</li><br><hr><br>
+                <li id="4">&lt;title&gt; tag -&nbsp;&nbsp; This tag is used to define title for the HTML document.</li><br><hr><br>
+                <li id="5">&lt;body&gt; tag - &nbsp;&nbsp;This tag is used to define Body of the HTML document. Almost everything lies inside this tag. </li><br><hr><br>
+                <li id="6"> id=""&lt;p&gt; tag- &nbsp;&nbsp;This tag is used to define paragraph for the HTML document.</li><br><hr><br>
+                <li id="7">&lt;h1&gt; tag -&nbsp;&nbsp; This tag is used to define biggest heading inside the HTML document.</li><br><hr><br>
+                <li id="8">&lt;h2&gt; tag - &nbsp;&nbsp;This tag is used to define 2nd biggest heading.</li><br><hr><br>
+                <li id="9">&lt;h3&gt; tag - &nbsp;&nbsp;This tag is used to define 3rd biggest heading.</li><br><hr><br>
+                <li id="10">&lt;h4&gt; tag - &nbsp;&nbsp;This tag is used to define 4th biggest heading.</li><br><hr><br>
+                <li id="11">&lt;h5&gt; tag - &nbsp;&nbsp;This tag is used to define 5th biggest heading.</li><br><hr><br>
+                <li id="12">&lt;h6&gt; tag - &nbsp;&nbsp;This tag is used to define smallest heading.</li><br><hr><br>
+                <li id="13">&lt;style&gt; tag -&nbsp;&nbsp; This tag is used to define internal CSS for any element inside the HTML document.</li><br><hr><br>
+                <li id="14">&lt;br&gt; tag -&nbsp;&nbsp; This is an empty tag (empty tags don't need to be closed) and is used to insert a line break.</li><br><hr><br>
+                <li id="15">&lt;hr&gt; tag -&nbsp;&nbsp; This tag is used to insert horizontal line.</li><br><hr><br>
+                <li id="16" >&lt;ul&gt; tag - &nbsp;&nbsp;This tag is used to insert unordered list.</li><br><hr><br>
+                <li id="17" >&lt;ol&gt; tag -&nbsp;&nbsp; This tag is used to insert ordered list.</li><br><hr><br>
+                <li id="18" >&lt;li&gt; tag -&nbsp;&nbsp; This tag is used to insert list inside &lt;ul&gt; or &lt;ol&gt; tag.</li><br><hr><br>
+                <li id="19">&lt;strong&gt; tag - &nbsp;&nbsp;This tag is used to make the text inside it<strong> bold </strong>and gives importance to the text.</li><br><hr><br>
+                <li id="20">&lt;b& id=""gt; tag -&nbsp;&nbsp; This tag is used to make the text inside it<strong> bold </strong>but doesn't give importance to the text.</li><br><hr><br>
+                <li id="21">&lt;i&gt; tag - &nbsp;&nbsp;This tag is used to make the text inside it <em>italic.</em></li><br><hr><br>
+                <li id="22">&lt;u&gt; tag - &nbsp;&nbsp;This tag is used to <u>underline</u> the text inside it.</li><br><hr><br>
+                <li id="23">&lt;!--XXX --&gt; - &nbsp;&nbsp;This tag is used to insert comment.</li><br><hr><br>
+                <li id="24">&lt;abbr&gt; tag -&nbsp;&nbsp; This tag defines an abbreviation.</li><br><hr><br>
+                <li id="25">&lt;center&gt; -&nbsp;&nbsp; This tag aligns all elements inside it to the center.</li><br><hr><br>
+                <li id="26">&lt;del&gt; -&nbsp;&nbsp; This tag defines text that has been <del>deleted </del>from the document.</li><br><hr><br>
+                <li id="27">&lt;ins&gt; - &nbsp;&nbsp;This tag defines text that has been <ins>inserted</ins> into a document.</li><br><hr><br>
+                <li id="28">&lt;mark&gt; - &nbsp;&nbsp;This tag <mark>highlights</mark> text.</li><br><hr><br>
+                <li id="29">&lt;pre&gt; - &nbsp;&nbsp;This tag defines preformatted text.</li><br><hr><br>
+                <li id="30">&lt;q&gt; -&nbsp;&nbsp; This tag defines quotation.</li><br><hr><br>
+                <li id="31">&lt;sub&gt; -&nbsp;&nbsp; This tag defines <sub>subscripted</sub> text.</li><br><hr><br>
+                <li id="32">&lt;sup&gt; -&nbsp;&nbsp; This tag defines <sup>superscripted</sup> text.</li><br><hr><br>
+                <li id="33">&lt;time&gt; - &nbsp;&nbsp;This tag defines a date/time.</li><br><hr><br>
+                <li id="34">&lt;form&gt; - &nbsp;&nbsp;This tag defines an HTML form for user input.</li><br><hr><br>
+                <li id="35">&lt;input&gt; -&nbsp;&nbsp; This tag defines an input control.</li><br><hr><br>
+                <li id="36">&lt;button&gt; -&nbsp;&nbsp; This tag defines a clickable button.</li><br><hr><br>
+                <li id="37">&lt;textarea id=""&gt; - &nbsp;&nbsp;This tag defines a multiple line input control.</li><br><hr><br>
+                <li id="38">&lt;option&gt; -&nbsp;&nbsp; This tag defines an option in a drop-down list.</li><br><hr><br>
+                <li id="39">&lt;iframe&gt; - &nbsp;&nbsp;This tag defines an inline frame.</li><br><hr><br>
+                <li id="40">&lt;img&gt; - &nbsp;&nbsp;This tag defines an image.</li><br><hr><br>
+                <li id="41">&lt;map&gt; - &nbsp;&nbsp;This tag defines an user side image-map.</li><br><hr><br>
+                <li id="42">&lt;area&gt; - &nbsp;&nbsp;This tag defines an area inside an image-map.</li><br><hr><br>
+                <li id="43">&lt;a&gt; - &nbsp;&nbsp;This tag defines a hyperlink.</li><br><hr><br>
+                <li id="44">&lt;table&gt; - &nbsp;&nbsp;This tag defines a table.</li><br><hr><br>
+                <li id="45">&lt;caption&gt; -&nbsp;&nbsp; This tag defines a table caption,</li><br><hr><br>
+                <li id="46">&lt;th&gt; -&nbsp;&nbsp; This tag defines table header cell.</li><br><hr><br>
+                <li id="47">&lt;tr&gt; -&nbsp;&nbsp; This tag defines a row in a table.</li><br><hr><br>
+                <li id="48">&lt;td&gt; - &nbsp;&nbsp;This tag defines a cell in a table.</li><br><hr><br>
+                <li id="49">&lt;meta&gt; - &nbsp;&nbsp;This tag defines metadata of the HTML document.</li><br><hr><br>
+                <li id="50">&lt;footer&gt; -&nbsp;&nbsp; This tag defines a footer for the document.</li><br><hr><br>
+            </ol>
+            <a href="#top"><button class="top">Top</button></a>
+        </body>
+</html>

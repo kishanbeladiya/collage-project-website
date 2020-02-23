@@ -1,0 +1,355 @@
+<html>
+    <head>
+        <title>Subject</title>
+        <script>
+            function fn1()
+            {
+                var search;
+                search=document.getElementById('search').value;
+                if(search==0)
+                alert("Not valid search");
+            }
+        </script>
+    </head>
+    <style>
+        b.title{
+            position: absolute;
+            top:3%;
+            left:3%;
+            color:white;
+            font-size: 55px;
+            border:0px solid white;
+            padding:4px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow: 3px 3px 6px black;
+
+        }
+        img.backimage{
+            height:100%;
+            width:100%;
+            position :relative;
+            margin:-3px;
+            z-index: -1;
+        }
+        nav.navbar{
+            display: block;
+            position: absolute;
+            display:inline-block;
+            top:4%;
+            left:28%;
+            font-size: 20px;
+        }
+        a.ele{
+            color:white;
+            text-decoration: none;
+            font-family:Georgia;
+            transition: 0.7s ease;
+            padding: 10px;
+
+        }
+        a.ele:active{
+            color:#f4b41a;
+            background-color: #143d59;
+        }
+        a.ele:hover{
+            background-color:#f4b41a;
+            color:black;
+            border:1px solid white;
+            border-radius: 3px;
+            padding:8px;
+            box-shadow: 0px 0px 0px white;
+            opacity:90%;
+            
+            font-size: 30px;
+        }
+        
+       input.search{
+           height: 30px;
+           width: 250px;
+           top:31%;
+           right:10%;
+           position: absolute;
+           box-shadow: -2px 2px 20px black;
+           border-radius: 5px;
+       }
+       p.searchi{
+        position: absolute;
+            top:38%;
+            right:11%;
+            color:white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:22px;
+       }
+       button.but1{
+            position: absolute;
+            top:31%;
+            right:5%;
+            height:30px;
+            width:70px;
+            background-color: #f4b41a;
+            box-shadow: -2px 2px 2px black;
+            border-radius: 5px;
+       }
+       div.search1{
+           box-shadow: 5px 5px 5px black;
+       }
+    nav.social{
+            position: absolute;
+            top:85%;
+            left:45%;
+        }
+        img.social1{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social1:hover{
+            border-radius: 10px;
+            border:1px solid white;
+        }
+        img.social2{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social2:hover{
+            border-radius: 10px;
+            border:1px solid white;
+        }
+        img.social3{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social3:hover{
+            border-radius: 10px;
+            border:1px solid white;
+        }
+        img.social4{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social4:hover{
+            border-radius: 10px;
+            border:1px solid white;
+        }
+        div.tlb{
+            position:absolute;
+            top:30%;
+            left:30%;
+            height:10%;
+            width: 23%;
+            box-shadow: 2px 2px 10px black;
+        }
+        nav.tl{
+            display: block;
+            position: absolute;
+            display:inline-block;
+            top:30%;
+            left:4%;
+            font-size: 18px;
+        }
+        a.tele{
+            color:white;
+            text-decoration: none;
+            font-family:Georgia;
+            transition: 0.7s ease;
+            padding: 10px;
+
+        }
+        a.tele:active{
+            color:#f4b41a;
+            background-color: #143d59;
+        }
+        a.tele:hover{
+            background-color:#f4b41a;
+            color:black;
+            border:1px solid white;
+            border-radius: 3px;
+            padding:8px;
+            box-shadow: 0px 0px 0px white;
+            opacity:90%;
+            font-size: 23px;
+        }
+        table.table th{
+            font-size: 20px;
+            padding: 5px;
+            color:#143d59;
+            opacity:90%;
+        }
+        table.table td.main{
+            font-size: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        td.main:hover{
+            color:#e00000;
+        }
+        th.sem1{
+            border:1px solid black;
+            border-radius: 7px;
+            box-shadow: 4px 4px 20px black;
+            font-size: 30px;
+            
+        }
+        td,th{
+            border:0.5px solid #dddddd;
+        }
+        button.top{
+            height: 60px;
+            width: 60px;
+            position: fixed;
+            top:80%;
+            right:3%;
+            border:none;
+            border-radius: 50px;
+            box-shadow: 6px 6px 15px black;
+            color:white;
+            background-color:black;
+            text-decoration: none;
+        }
+    </style>
+
+        <body>
+            <b id="top" class="title">Subjects</b>
+            <img src="backimage.jpg" class="backimage">
+            <div class="header">
+                <nav class="navbar">
+                    <img src="">
+                    &nbsp;<a href="homepage.html"  class="ele">Home</a>&nbsp;&nbsp;
+                    <a href="about.html" class="ele">About Me</a>&nbsp;&nbsp;
+                    <a href="location.html" class="ele"  >Location</a>&nbsp;&nbsp;
+                    <a href="project2.html" class="ele" >Projects</a>&nbsp;&nbsp;
+                    <a href="subject.html" class="ele" >Subject</a>&nbsp;&nbsp;
+                    <a href="html.html" class="ele" >HTML</a>&nbsp;
+                </nav>
+                
+            </div>
+            <div class="search1" >
+                <input type="search" placeholder="search" class="search" id="search">
+                <button class="but1" onclick="fn1()">Go</button>
+                <p class="searchi">Type anything you want</p>
+            </div>
+            <nav class="social">
+                <a href=""> <img src="instagram (1).png" class="social1"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=""> <img src="facebook (2).png" class="social2"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" ><img src="linkedin (1).png" class="social3"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" ><img src="twitter (2).png" class="social4"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </nav>
+            <div class="tlb">
+                <nav class="tl">
+                    <img src="">
+                    &nbsp;<a href="#sem1"  class="tele">Semester-1</a>&nbsp;&nbsp;
+                    <a href="#sem2" class="tele">Semester-2</a>&nbsp;&nbsp;
+                </nav>
+                
+            </div>
+            <a href="#top"><button class="top">Top</button></a>
+        <div>
+        <table class="table" id="sem1">
+            <tr><th class="sem1">semester-1</th></tr>
+            <tr>
+                <th>Subject Code</th>
+                <th>Subject name</th>
+            </tr>
+            <tr>
+                <td class="main">MAT101 </td>
+                <td class="main">Mathematics - I </td>
+            </tr>
+            <tr>
+                <td class="main">ECT101 </td>
+                <td class="main">Digital Electronics  </td>
+            </tr>
+            <tr>
+                <td class="main">ECT103 </td>
+                <td class="main">Fundamentals of Electrical Engineering </td>
+            </tr>
+            <tr>
+                <td class="main">CST101 </td>
+                <td class="main">Introduction to Computer Systems and Programming</td>
+            </tr>
+            <tr>
+                <td class="main">HST101 </td>
+                <td class="main">Communication Skills in English </td>
+            </tr>
+            <tr>
+                <td class="main">ECP101 </td>
+                <td class="main">Digital Electronics Lab  </td>
+            </tr>
+            <tr>
+                <td class="main">CSP101 </td>
+                <td class="main">Computer Programming Lab </td>
+            </tr>
+            <tr>
+                <td class="main">CSP111 </td>
+                <td class="main">IT Workshop - 1  </td>
+            </tr>
+            <tr>
+                <td class="main">HSP101  </td>
+                <td class="main">English Communication Lab </td>
+            </tr>
+            <tr>
+                <td class="main">OTP101 </td>
+                <td class="main">Creative Arts / Liberal Arts </td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+        </div>
+        <div>
+            <table class="table" id="sem2">
+                <tr><th class="sem1">semester-2</th></tr>
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Subject name</th>
+                </tr>
+                <tr>
+                    <td class="main">MAT102  </td>
+                    <td class="main">Mathematics – II </td>
+                </tr>
+                <tr>
+                    <td class="main">ECT102  </td>
+                    <td class="main">Electronic Devices and Circuits   </td>
+                </tr>
+                <tr>
+                    <td class="main">CST102  </td>
+                    <td class="main">Data Structures and Algorithms  </td>
+                </tr>
+                <tr>
+                    <td class="main">CST104  </td>
+                    <td class="main">Internet and Web Technologies </td>
+                </tr>
+                <tr>
+                    <td class="main">HST102 </td>
+                    <td class="main">Health, Safety and Environment  </td>
+                </tr>
+                <tr>
+                    <td class="main">HST104</td>
+                    <td class="main">Human Values and Effective Communication   </td>
+                </tr>
+                <tr>
+                    <td class="main">ECP102  </td>
+                    <td class="main">Electronic Devices and Circuits Lab  </td>
+                </tr>
+                <tr>
+                    <td class="main">CSP102  </td>
+                    <td class="main">Data Structures and Algorithms Lab  </td>
+                </tr>
+                <tr>
+                    <td class="main">CSP112  </td>
+                    <td class="main">IT Workshop – 2  </td>
+                </tr>
+                <tr>
+                    <td class="main">HSP104 </td>
+                    <td class="main">Soft Skill Development Lab </td>
+                </tr>
+                <tr>
+                    <td class="main">OTD102 </td>
+                    <td class="main">Independent Project  </td>
+                </tr>
+            </table>
+            </div>
+    </body>
+</html>

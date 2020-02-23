@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <title>HomePage</title>
+        <script>
+            function fn1()
+            {
+                var search;
+                search=document.getElementById('search').value;
+                if(search==0)
+                alert("Not valid search");
+            }
+        </script>
+    </head>
+    <style>
+        img.backimage{
+            height:100%;
+            width:100%;
+            position :relative;
+            margin:-8px;
+            z-index: -1;
+        }
+        nav.navbar{
+            display: block;
+            position: absolute;
+            display:inline-block;
+            top:4%;
+            left:28%;
+            font-size: 20px;
+        }
+        a.ele{
+            color:white;
+            text-decoration: none;
+            font-family:Georgia;
+            transition: 0.7s ease;
+            padding: 10px;
+
+        }
+        a.ele:active{
+            color:#f4b41a;
+            background-color: #143d59;
+        }
+        a.ele:hover{
+            background-color:#f4b41a;
+            color:black;
+            border:1px solid white;
+            border-radius: 3px;
+            padding:8px;
+            box-shadow: 0px 0px 0px white;
+            opacity:90%;
+            
+            font-size: 30px;
+        }
+        div.content{
+            position: absolute;
+            height: 120px;
+            width: 200px;
+            padding:5px;
+            top:20%;
+            left:10%;
+            color:#f4b41a;
+            text-align:center;;
+            font-size:45Px;
+            text-shadow: 3px 3px 5px black;
+            box-shadow: 3px 3px 30px black;
+            transition: 0.7s;
+        }
+        div.content:hover{
+            height: 130px;
+            width: 210px;
+            box-shadow: 1px 1px 5px white;
+        }
+        img.self{
+            height: 200Px;
+            width:200px;
+            border:0.5px solid black;
+            
+
+        }
+        img.self:hover{
+            height:201px;
+            width:201px;
+        }
+        b.welcome{
+            position: absolute;
+            top:25%;
+            left:32%;
+            font-size:80px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:white;
+       }
+       p.quote{
+           position: absolute;
+           top:35%;
+           left:32%;
+           font-size: 35px;
+           color:white;
+       }
+       p.quote1{
+           position: absolute;
+           top:65%;
+           left:30%;
+           color:white;
+           font-size:35px;
+           text-shadow: 0px 0px 2px black;
+           box-shadow: 3px 3px 70px black;
+       }
+       input.search{
+           height: 30px;
+           width: 250px;
+           top:31%;
+           right:10%;
+           position: absolute;
+           box-shadow: -2px 2px 20px black;
+           border-radius: 5px;
+       }
+       p.searchi{
+        position: absolute;
+            top:38%;
+            right:11%;
+            color:white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:22px;
+       }
+       button.but1{
+            position: absolute;
+            top:31%;
+            right:5%;
+            height:30px;
+            width:70px;
+            background-color: #f4b41a;
+            box-shadow: -2px 2px 2px black;
+            border-radius: 5px;
+       }
+       div.search1{
+           box-shadow: 5px 5px 5px black;
+       }
+    nav.social{
+            position: absolute;
+            top:85%;
+            left:45%;
+        }
+        img.social1{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social1:hover{
+            border-radius: 10px;
+            border:1px solid white;
+        }
+        img.social2{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social2:hover{
+            border-radius: 10px;
+            border:1px solid white;
+        }
+        img.social3{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social3:hover{
+            border-radius: 10px;
+            border:1px solid white;
+        }
+        img.social4{
+            height:30px;
+            width:30px;
+            transition: 0.3s;
+        }
+        img.social4:hover{
+            border-radius: 10px;
+            border:1px solid white;
+        }
+    </style>
+
+        <body>
+            <img src="backimage.jpg" class="backimage">
+            <div class="header">
+                <nav class="navbar">
+                    <img src="">
+                    &nbsp;<a href="homepage.html"  class="ele">Home</a>&nbsp;&nbsp;
+                    <a href="about.html" class="ele">About Me</a>&nbsp;&nbsp;
+                    <a href="location.html" class="ele"  >Location</a>&nbsp;&nbsp;
+                    <a href="project2.html" class="ele" >Projects</a>&nbsp;&nbsp;
+                    <a href="subject.html" class="ele" >Subject</a>&nbsp;&nbsp;
+                    <a href="html.html" class="ele" >HTML</a>&nbsp;
+                </nav>
+                
+            </div>
+            <div class="search1" >
+                <input type="search" placeholder="search" class="search" id="search">
+                <button class="but1" onclick="fn1()">Go</button>
+                <p class="searchi">Type anything you want</p>
+            </div>
+            <div class="content">
+                <!-- <img src="kishan.jpg" class="self"> -->
+                Kishan Beladiya
+            </div>
+            <div class="">
+                <b class="welcome">Welcome</b>
+                <p class="quote">To my site</p>
+                <p class="quote1">"They help you make believe something"</p>
+            </div>
+            <div class="footer">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+            </div>
+            <nav class="social">
+                <a href=""> <img src="instagram (1).png" class="social1"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=""> <img src="facebook (2).png" class="social2"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" ><img src="linkedin (1).png" class="social3"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" ><img src="twitter (2).png" class="social4"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </nav>
+        </body>
+</html>
